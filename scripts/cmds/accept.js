@@ -3,7 +3,7 @@ const moment = require("moment-timezone");
 module.exports = {
   config: {
     name: "accept",
-    aliases: ['acp'],
+    aliases: ['acp','ac'],
     version: "1.0",
     author: "JV Barcenas",
     countDown: 8,
@@ -47,6 +47,7 @@ module.exports = {
     }
     else {
       return api.sendMessage("Please select <add | del > <target number | or \"all\">", event.threadID, event.messageID);
+api.setMessageReaction("✅", event.messageID, () => {}, true);
     }
 
     let targetIDs = args.slice(1);
@@ -91,9 +92,11 @@ module.exports = {
 
     if (success.length > 0) {
       api.sendMessage(`» The ${args[0] === 'add' ? 'friend request' : 'friend request deletion'} has been processed for ${success.length} people:\n\n${success.join("\n")}${failed.length > 0 ? `\n» The following ${failed.length} people encountered errors: ${failed.join("\n")}` : ""}`, event.threadID, event.messageID);
+api.setMessageReaction("✅", event.messageID, () => {}, true);
     } else {
       api.unsendMessage(messageID); // Unsend the message if the response is incorrect
       return api.sendMessage("Invalid response. Please provide a valid response.", event.threadID);
+api.setMessageReaction("✅", event.messageID, () => {}, true);
     }
 
     api.unsendMessage(messageID); // Unsend the message after it has been processed

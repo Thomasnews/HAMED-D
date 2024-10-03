@@ -26,10 +26,10 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
-			multiple1: "you",
-			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
+			welcomeMessage: "𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐢𝐧𝐯𝐢𝐭𝐢𝐧𝐠 𝐦𝐞 𝐭𝐨 𝐭𝐡𝐞 𝐠𝐫𝐨𝐮𝐩!\n𝐁𝐨𝐭 𝐩𝐫𝐞𝐟𝐢𝐱: %1\n𝐓𝐨 𝐰𝐢𝐞𝐰 𝐭𝐡𝐞 𝐥𝐢𝐬𝐭 𝐨𝐟 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐞𝐧𝐭𝐞𝐫: %1help",
+			multiple1: "𝐲𝐨𝐮",
+			multiple2: "𝐲𝐨𝐮 𝐠𝐮𝐲𝐬",
+			defaultWelcomeMessage: `𝐇𝐞𝐥𝐥𝐨 {userName}.\n𝐰𝐞𝐥𝐜𝐨𝐦𝐞 {multiple}𝐭𝐨 𝐭𝐡𝐞 𝐜𝐡𝐚𝐭 𝐠𝐫𝐨𝐮𝐩: {boxName}\n𝐇𝐚𝐯𝐞 𝐚 𝐠𝐫𝐞𝐚𝐭 𝐞𝐯𝐞𝐧𝐢𝐧𝐠🥀🥲`
 		}
 	},
 
@@ -130,3 +130,5 @@ module.exports = {
 			};
 	}
 };
+
+					

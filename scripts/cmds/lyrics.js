@@ -22,7 +22,7 @@ module.exports = {
  onStart: async function ({ api, event, args }) {
  const songName = args.join(" ");
  if (!songName) {
- api.sendMessage("Le nom de la chanson 🎶", event.threadID, event.messageID);
+ api.sendMessage("Please provide a song name!", event.threadID, event.messageID);
  return;
  }
 

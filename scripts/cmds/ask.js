@@ -14,9 +14,9 @@ const fonts = {
 const rolePlay = "quand tu répond à cette question ajoutes des emojis convenable :\n\n";
 
 const Prefixes = [
-  'optimus',
+  'Dee',
   'ai',
-  'prime',
+  'detective',
 ];
 
 module.exports = {
@@ -52,7 +52,7 @@ api.setMessageReaction("📚", event.messageID, () => {}, true);
       const senderInfo = await api.getUserInfo([senderID]);
       const senderName = senderInfo[senderID].name;
       const response = await axios.get(`https://sandipbaruwal.onrender.com/gemini?prompt=${encodeURIComponent(rolePlay + prompt)}`);
-      const answer = `[📕] 𝗢𝗣𝗧𝗜𝗠𝗨𝗦 𝗣𝗥𝗜𝗠𝗘\n\n${response.data.answer} \n[📚]········································⬚`;
+      const answer = `[📕] 𝗗𝗘𝗧𝗘𝗖𝗧𝗜𝗩𝗘 𝗗𝗘𝗘\n\n${response.data.answer} \n[📚]········································⬚`;
 api.setMessageReaction("📕", event.messageID, () => {}, true);
 
       //apply const font to each letter in the answer
